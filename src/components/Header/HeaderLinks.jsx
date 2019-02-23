@@ -10,7 +10,7 @@ import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
-import { Apps, CloudDownload } from "@material-ui/icons";
+import { Apps, Phone, Mail, Contacts } from "@material-ui/icons";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -23,9 +23,14 @@ function HeaderLinks({ ...props }) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
+        <Link to="/" className={classes.navLink}>
+          Home
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
-          buttonText="Components"
+          buttonText="Services"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
@@ -33,27 +38,67 @@ function HeaderLinks({ ...props }) {
           buttonIcon={Apps}
           dropdownList={[
             <Link to="/" className={classes.dropdownLink}>
-              All components
+              Photography and Videography
             </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
+            <Link to="/" className={classes.dropdownLink}>
+              Consultancy
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Social Media Management
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Graphical Design
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Content Curation
+            </Link>,
+            <Link to="/" className={classes.dropdownLink}>
+              Resumes & Cover Letter Customization
+            </Link>
+            // <a
+            //   href="/"
+            //   // target="_blank"
+            //   className={classes.dropdownLink}
+            // >
+            //   Consultancy
+            // </a>
           ]}
         />
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Button
-          href="https://www.creative-tim.com/product/material-kit-react"
+        {/* <Button
+          href="/contact"
           color="transparent"
-          target="_blank"
+          
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
-        </Button>
+          Contact us
+        </Button> */}
+        {/* <CustomDropdown
+          noLiPadding
+          buttonText="Contact Us"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent"
+          }}
+          buttonIcon={Contacts}
+          dropdownList={[
+            <a href="mailto:yourzone.jamaica@gmail.com" target="_blank" className={classes.dropdownLink}>
+              <Mail />: yourzone.jamaica@gmail.com
+            </a>,
+            <a href="tel:876-896-1104" target="_blank" className={classes.dropdownLink}>
+              <Phone/>: 876-896-1104
+            </a>,
+            <a href="tel:876-476-1509" target="_blank" className={classes.dropdownLink}>
+              <Phone/>: 876-476-1509
+            </a>,
+            
+            
+          ]}
+        /> */}
+        <Link to="/contact" className={classes.navLink}>
+          Contacts
+        </Link>
       </ListItem>
       {/* <ListItem className={classes.listItem}>
         <Tooltip
