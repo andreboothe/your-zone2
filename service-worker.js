@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/andreboothe/your-zone2/precache-manifest.1ef25e84a148d5236392128862c95eae.js"
+  "/your-zone2/precache-manifest.fdd76b38fbd29c4a00f22b76922b814c.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/andreboothe/your-zone2/index.html", {
+workbox.routing.registerNavigationRoute("/your-zone2/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
