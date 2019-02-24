@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 // import { createBrowserHistory } from "history";
-
+import { Router, Route, Switch, BrowserRouter  } from "react-router-dom";
 import "assets/scss/material-kit-react.scss?v=1.4.0";
 
 // pages for this product
@@ -12,6 +12,8 @@ import "assets/scss/material-kit-react.scss?v=1.4.0";
 import App from "./App"
 
 ReactDOM.render(
-  <App/>,
+  <BrowserRouter >
+    <App />
+  </BrowserRouter>,
   document.getElementById("root")
 );

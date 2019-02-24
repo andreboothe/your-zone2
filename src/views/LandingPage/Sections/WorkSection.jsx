@@ -43,6 +43,15 @@ class WorkSection extends React.Component {
                     }}
                   />
                 </GridItem>
+                <GridItem xs={12} sm={12} md={6}>
+                  <CustomInput
+                    labelText="Subject"
+                    id="txt"
+                    formControlProps={{
+                      fullWidth: true
+                    }}
+                  />
+                </GridItem>
                 <CustomInput
                   labelText="Your Message"
                   id="message"

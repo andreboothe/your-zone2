@@ -45,25 +45,29 @@ const workStyle = {
       padding: "10px 10px",
       lineHeight:"45px",
       fontSize:"45px",
-      verticalAlign: "middle"
+      verticalAlign: "middle",
+      width:"100%"
+
     },
     "&:hover":{
       backgroundColor: dangerColor,
       color: "#FFFFFF",
-      ...dangerBoxShadow
+      ...dangerBoxShadow,
+      borderRadius: "10px !important"
     }
   },
   linkIcon:{
     "&,&:focus": {
-      color: "#000  ",
+      color: "inherit",
       textDecoration: "none",
       
       fontSize:"50px !important"
     },
     "&:hover":{
       backgroundColor: dangerColor,
-      color: "#FFFFFF",
+      color: "#FFFFFF !important",
       ...dangerBoxShadow
+      
     }
   }
 };

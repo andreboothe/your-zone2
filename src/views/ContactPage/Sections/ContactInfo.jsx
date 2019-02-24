@@ -21,7 +21,7 @@ class ContactInfo extends React.Component {
           <GridItem cs={12} sm={12} md={8}>
             <h2 className={classes.title}>Contact Us</h2>
             <h4 className={classes.description}>
-              Feel free to reach ut to us at the following.
+              Feel free to reach out to us at the following.
             </h4>
             
             <GridItem cs={12} sm={12} md={12}>

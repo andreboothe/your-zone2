@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { createBrowserHistory } from "history";
-import { Router, Route, Switch } from "react-router-dom";
+import { Router, Route, Switch, withRouter, Redirect  } from "react-router-dom";
 import withStyles from "@material-ui/core/styles/withStyles";
 import classNames from "classnames";
 import "assets/scss/material-kit-react.scss?v=1.4.0";
@@ -27,15 +27,30 @@ var hist = createBrowserHistory();
 const dashboardRoutes = [];
 
 class App extends React.Component {
+  
+
+  componentDidUpdate(prevProps){
+    
+    if(this.props.history.location.pathname ){
+      window.scrollTo({
+        top: this.props.history.location.pathname ==="/"?0:600,
+        left: 0,
+        behavior: 'smooth'
+      });
+      
+    }
+  }
+
   render() {
     const { classes, ...rest } = this.props;
     return (
-    <React.Fragment>
+
     
     
-        <Router history={hist}>
-          <React.Fragment>
-          <div>
+      // <BrowserRouter >
+      <React.Fragment>
+        
+      <div>
       <Header
           color="transparent"
           routes={dashboardRoutes}
@@ -67,18 +82,19 @@ class App extends React.Component {
           
             {/* <Route path="/profile-page" component={ProfilePage} />
             <Route path="/login-page" component={LoginPage} />*/}
-            <Route path="/contact" component={ContactPage} /> *
-            <Route path="/" component={LandingPage} />
+            <Route exact  path="/contact" component={ContactPage} /> *
+            <Route exact  path="/" component={LandingPage} />
+            <Route  path="*" render={() => (<Redirect to="/" />)} /> 
           </Switch>
           <div>
             <Footer />
           </div>
           </React.Fragment>
-        </Router>
+        // </BrowserRouter>
         
-    </React.Fragment>
+  
     )
   }
 }
 
-export default withStyles(landingPageStyle)(App);
+export default  withStyles(landingPageStyle)(withRouter(App));

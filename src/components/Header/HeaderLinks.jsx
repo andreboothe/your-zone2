@@ -28,7 +28,7 @@ function HeaderLinks({ ...props }) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
+        {/* <CustomDropdown
           noLiPadding
           buttonText="Services"
           buttonProps={{
@@ -54,16 +54,21 @@ function HeaderLinks({ ...props }) {
             </Link>,
             <Link to="/" className={classes.dropdownLink}>
               Resumes & Cover Letter Customization
-            </Link>
-            // <a
-            //   href="/"
-            //   // target="_blank"
-            //   className={classes.dropdownLink}
-            // >
-            //   Consultancy
-            // </a>
-          ]}
-        />
+            </Link> }}*/}
+            <a
+              href="/consultancy"
+              // target="_blank"
+              className={classes.navLink}
+            >
+              Consultancy
+            </a>
+          
+        
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/about" className={classes.navLink}>
+          About Us
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/* <Button
