@@ -16,6 +16,8 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import InfoArea from "components/InfoArea/InfoArea.jsx";
 
+import SectionCarousel from "./SectionCarousel";
+
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
 class ProductSection extends React.Component {
@@ -37,6 +39,9 @@ class ProductSection extends React.Component {
         </GridContainer>
         <div>
           <GridContainer>
+            <GridItem xs={12} sm={12} md={12}>
+              <SectionCarousel/>
+            </GridItem >
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Consultancy"

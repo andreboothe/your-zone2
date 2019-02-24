@@ -32,7 +32,7 @@ class ContactPage extends React.Component {
         
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-           <ContactInfo/>
+            <ContactInfo/>
             <WorkSection />
           </div>
         </div>

@@ -1,4 +1,4 @@
-import { container } from "assets/jss/material-kit-react.jsx";
+import { container, dangerColor } from "assets/jss/material-kit-react.jsx";
 
 const carouselStyle = {
   section: {
@@ -8,6 +8,18 @@ const carouselStyle = {
   marginAuto: {
     marginLeft: "auto !important",
     marginRight: "auto !important"
+  },
+  image:{
+    maxHeight:"365px !important"
+  },
+  captionBg:{
+    backgroundColor: "rgba(234, 63, 61, 0.45)",
+    borderRadius: "5px",
+    width:"fit-content",
+    marginLeft:"auto",
+    marginRight:"auto",
+    paddingLeft: "5px",
+    paddingRight:"5px"
   }
 };
 
