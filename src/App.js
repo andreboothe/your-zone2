@@ -19,7 +19,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import Components from "views/Components/Components.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ContactPage from "views/ContactPage/ContactPage.jsx";
-import LoginPage from "views/LoginPage/LoginPage.jsx";
+import AboutPage from "views/AboutPage/AboutPage.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
@@ -33,7 +33,7 @@ class App extends React.Component {
     
     if(this.props.history.location.pathname ){
       window.scrollTo({
-        top: this.props.history.location.pathname ==="/"?0:600,
+        top: this.isGivenPage("/") ?  0 : 600,
         left: 0,
         behavior: 'smooth'
       });
@@ -41,57 +41,69 @@ class App extends React.Component {
     }
   }
 
-  render() {
-    const { classes, ...rest } = this.props;
-    return (
+  isGivenPage =(page)=> {
+    return this.props.history.location.pathname === page;
+  }
 
-    
-    
-      // <BrowserRouter >
-      <React.Fragment>
-        
-      <div>
-      <Header
-          color="transparent"
-          routes={dashboardRoutes}
-          brand="Your Zone"
-          rightLinks={<HeaderLinks />}
-          fixed
-          changeColorOnScroll={{
-            height: 100,
-            color: "scarlet"
-          }}
-          {...rest}
-        />
-        <Parallax filter image={require("assets/img/logo-dark.jpg")}>
+  renderParallax =(classes)=> {
+    return (
+      <Parallax filter image={require("assets/img/logo-dark.jpg")}>
           <div className={classes.container}>
             <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
+            {!this.isGivenPage("/about")?
+              (<GridItem xs={12} sm={12} md={6}>
                 <h1 className={classes.title}>Supreme service at a competitive price.</h1>
                 <h4>
                 At YourZone Media & Communication, we are a team of creatives who envisions meaningful interactions between your brand and your customers. We strive to create lasting impressions and deliver on our promise to always offer competitive pricing and creativity.
                 </h4>
                 <br />
                 
-              </GridItem>
+              </GridItem>)
+            :
+              ""
+            }
             </GridContainer>
           </div>
         </Parallax>
-        </div>
+    
+
+    );
+  }
+
+  render() {
+    const { classes, ...rest } = this.props;
+    return (
+
+      <React.Fragment>
+        
+        <div>
+        <Header
+            color="transparent"
+            routes={dashboardRoutes}
+            brand="Your Zone"
+            rightLinks={<HeaderLinks />}
+            fixed
+            changeColorOnScroll={{
+              height: 100,
+              color: "scarlet"
+            }}
+            {...rest}
+          />
+          {this.renderParallax(classes)}
+          </div>
           <Switch>
           
             {/* <Route path="/profile-page" component={ProfilePage} />
             <Route path="/login-page" component={LoginPage} />*/}
-            <Route exact  path="/contact" component={ContactPage} /> *
+            <Route exact  path="/about" component={AboutPage} /> 
+            <Route exact  path="/contact" component={ContactPage} /> 
             <Route exact  path="/" component={LandingPage} />
             <Route  path="*" render={() => (<Redirect to="/" />)} /> 
           </Switch>
           <div>
             <Footer />
           </div>
-          </React.Fragment>
-        // </BrowserRouter>
-        
+        </React.Fragment>
   
     )
   }

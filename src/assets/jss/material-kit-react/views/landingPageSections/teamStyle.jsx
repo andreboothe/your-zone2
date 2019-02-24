@@ -14,6 +14,9 @@ const teamStyle = {
     textDecoration: "none"
   },
   ...imagesStyle,
+  svgIcon:{
+    fontSize:"70px !important"
+  },
   itemGrid: {
     marginLeft: "auto",
     marginRight: "auto"

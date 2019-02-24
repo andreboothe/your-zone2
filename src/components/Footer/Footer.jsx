@@ -36,7 +36,7 @@ function Footer({ ...props }) {
             </ListItem>
             <ListItem className={classes.inlineBlock}>
               <Link
-                to="/"
+                to="/about"
                 className={classes.block}
                 // target="_blank"
               >
