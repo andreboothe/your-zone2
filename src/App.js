@@ -20,6 +20,7 @@ import Parallax from "components/Parallax/Parallax.jsx";
 import LandingPage from "views/LandingPage/LandingPage.jsx";
 import ContactPage from "views/ContactPage/ContactPage.jsx";
 import AboutPage from "views/AboutPage/AboutPage.jsx";
+import ConsultancyPage from "views/ConsultancyPage/ConsultancyPage.jsx";
 
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
@@ -95,6 +96,7 @@ class App extends React.Component {
           
             {/* <Route path="/profile-page" component={ProfilePage} />
             <Route path="/login-page" component={LoginPage} />*/}
+            <Route exact  path="/consultancy" component={ConsultancyPage} /> 
             <Route exact  path="/about" component={AboutPage} /> 
             <Route exact  path="/contact" component={ContactPage} /> 
             <Route exact  path="/" component={LandingPage} />

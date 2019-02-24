@@ -55,13 +55,13 @@ function HeaderLinks({ ...props }) {
             <Link to="/" className={classes.dropdownLink}>
               Resumes & Cover Letter Customization
             </Link> }}*/}
-            <a
-              href="/consultancy"
+            <Link
+              to="/consultancy"
               // target="_blank"
               className={classes.navLink}
             >
               Consultancy
-            </a>
+            </Link>
           
         
       </ListItem>
