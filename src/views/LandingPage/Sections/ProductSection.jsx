@@ -3,14 +3,14 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import Chat from "@material-ui/icons/Chat";
+// import Chat from "@material-ui/icons/Chat";
 import ImageSearch from "@material-ui/icons/ImageSearch";
 import Camera from "@material-ui/icons/Camera";
 import Web from "@material-ui/icons/Web";
 import Group from "@material-ui/icons/Group";
 import Brush from "@material-ui/icons/Brush";
 import FileCopy from "@material-ui/icons/FileCopy";
-import Fingerprint from "@material-ui/icons/Fingerprint";
+// import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";

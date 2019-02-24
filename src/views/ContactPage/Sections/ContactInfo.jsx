@@ -3,12 +3,12 @@ import React from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 
 // @material-ui/icons
-import { Apps, Phone, Mail, Contacts } from "@material-ui/icons";
+import { Phone, Mail } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
-import CustomInput from "components/CustomInput/CustomInput.jsx";
-import Button from "components/CustomButtons/Button.jsx";
+// import CustomInput from "components/CustomInput/CustomInput.jsx";
+// import Button from "components/CustomButtons/Button.jsx";
 
 import workStyle from "assets/jss/material-kit-react/views/landingPageSections/workStyle.jsx";
 
@@ -25,13 +25,13 @@ class ContactInfo extends React.Component {
             </h4>
             
             <GridItem cs={12} sm={12} md={12}>
-              <a href="mailto:yourzone.jamaica@gmail.com" target="_blank" className={classes.contactLink}>
+              <a  rel="noopener noreferrer" href="mailto:yourzone.jamaica@gmail.com" target="_blank" className={classes.contactLink}>
                 <Mail className={classes.linkIcon}/>: yourzone.jamaica@gmail.com
               </a>
-              <a href="tel:876-896-1104" target="_blank" className={classes.contactLink}>
+              <a  rel="noopener noreferrer" href="tel:876-896-1104" target="_blank" className={classes.contactLink}>
                 <Phone className={classes.linkIcon}/>: 876-896-1104
               </a>
-              <a href="tel:876-476-1509" target="_blank" className={classes.contactLink}>
+              <a  rel="noopener noreferrer" href="tel:876-476-1509" target="_blank" className={classes.contactLink}>
                 <Phone className={classes.linkIcon}/>: 876-476-1509
               </a>
             </GridItem>

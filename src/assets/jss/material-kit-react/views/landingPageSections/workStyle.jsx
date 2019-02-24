@@ -1,18 +1,18 @@
 import { title } from "assets/jss/material-kit-react.jsx";
 import {
-  defaultFont,
-  primaryColor,
-  primaryBoxShadow,
-  infoColor,
-  infoBoxShadow,
-  successColor,
-  successBoxShadow,
-  warningColor,
-  warningBoxShadow,
+  // defaultFont,
+  // primaryColor,
+  // primaryBoxShadow,
+  // infoColor,
+  // infoBoxShadow,
+  // successColor,
+  // successBoxShadow,
+  // warningColor,
+  // warningBoxShadow,
   dangerColor,
   dangerBoxShadow,
-  roseColor,
-  roseBoxShadow
+  // roseColor,
+  // roseBoxShadow
 } from "assets/jss/material-kit-react.jsx";
 const workStyle = {
   section: {
