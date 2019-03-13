@@ -42,7 +42,7 @@ class WorkSection extends React.Component {
       })
         .then(response => response.json())
         .then(response => {
-          if (response.accepted.length > 1) {
+          if (response.accepted.length > 0) {
             this.successSnackbar();
           } else {
             this.failSnackbar(
