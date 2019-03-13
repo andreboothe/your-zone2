@@ -27,6 +27,12 @@ function HeaderLinks({ ...props }) {
           Home
         </Link>
       </ListItem>
+      
+      <ListItem className={classes.listItem}>
+        <Link to="/about" className={classes.navLink}>
+          About Us
+        </Link>
+      </ListItem>
       <ListItem className={classes.listItem}>
         {/* <CustomDropdown
           noLiPadding
@@ -60,15 +66,10 @@ function HeaderLinks({ ...props }) {
               // target="_blank"
               className={classes.navLink}
             >
-              Consultancy
+              Book Consultation
             </Link>
           
         
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to="/about" className={classes.navLink}>
-          About Us
-        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
         {/* <Button
@@ -102,7 +103,7 @@ function HeaderLinks({ ...props }) {
           ]}
         /> */}
         <Link to="/contact" className={classes.navLink}>
-          Contacts
+          Contact
         </Link>
       </ListItem>
       {/* <ListItem className={classes.listItem}>

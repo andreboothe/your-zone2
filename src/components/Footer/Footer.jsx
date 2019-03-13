@@ -44,13 +44,13 @@ function Footer({ ...props }) {
               </Link>
             </ListItem>
             <ListItem className={classes.inlineBlock}>
-              <Link
-                to="/"
+              <a
+                href="https://Yourzonemedia.com"
                 className={classes.block}
-                
+                target="_blank"
               >
                 Blog
-              </Link>
+              </a>
             </ListItem>
             {/* <ListItem className={classes.inlineBlock}>
               <a

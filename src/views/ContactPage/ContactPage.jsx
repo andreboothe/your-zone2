@@ -19,8 +19,9 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 
 // Sections for this page
 
-import ReachOutSection from "./Sections/ReachOutSection.jsx";
+import WorkSection from "../LandingPage/Sections/WorkSection";
 import ContactInfo from "./Sections/ContactInfo.jsx";
+
 
 class ContactPage extends React.Component {
   render() {
@@ -28,12 +29,14 @@ class ContactPage extends React.Component {
     // console.log(dashboardRoutes)
     return (
       <div>
+        
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <ContactInfo />
-            <ReachOutSection />
+            <ContactInfo/>
+            <WorkSection />
           </div>
         </div>
+        
       </div>
     );
   }

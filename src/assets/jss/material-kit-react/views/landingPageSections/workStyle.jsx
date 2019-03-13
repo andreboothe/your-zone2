@@ -43,8 +43,8 @@ const workStyle = {
       textDecoration: "none",
       display: "inline-flex",
       padding: "10px 10px",
-      lineHeight:"45px",
-      fontSize:"45px",
+      lineHeight:"25px",
+      fontSize:"25px",
       verticalAlign: "middle",
       width:"100%"
 
@@ -61,7 +61,7 @@ const workStyle = {
       color: "inherit",
       textDecoration: "none",
       
-      fontSize:"50px !important"
+      fontSize:"25px !important"
     },
     "&:hover":{
       backgroundColor: dangerColor,
