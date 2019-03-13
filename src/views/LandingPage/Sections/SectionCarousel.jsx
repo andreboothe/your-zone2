@@ -5,7 +5,7 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import {LocationOn} from "@material-ui/icons";
+import { LocationOn } from "@material-ui/icons";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
@@ -41,16 +41,15 @@ class SectionCarousel extends React.Component {
       slidesToScroll: 1,
       autoplay: true
     };
-    const carouselImg = classNames("slick-image" ,classes.image)
+    const carouselImg = classNames("slick-image", classes.image);
     return (
       <div className={classes.section}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8} className={classes.marginAuto}>
+            <GridItem xs={12} sm={12} md={12} className={classes.marginAuto}>
               <Card carousel>
                 <Carousel {...settings}>
                   <div>
-                    
                     <img
                       src={photoGraphy}
                       alt="First slide"
@@ -73,7 +72,7 @@ class SectionCarousel extends React.Component {
                     <div className="slick-caption">
                       <h4 className={classes.captionBg}>
                         <Group className="slick-icons" />
-                          Consulting
+                        Consulting
                       </h4>
                     </div>
                   </div>
@@ -86,7 +85,7 @@ class SectionCarousel extends React.Component {
                     <div className="slick-caption">
                       <h4 className={classes.captionBg}>
                         <Devices className="slick-icons" />
-                          Web Development
+                        Web Development
                       </h4>
                     </div>
                   </div>
@@ -99,7 +98,7 @@ class SectionCarousel extends React.Component {
                     <div className="slick-caption">
                       <h4 className={classes.captionBg}>
                         <Web className="slick-icons" />
-                          Social Media Management
+                        Social Media Management
                       </h4>
                     </div>
                   </div>
@@ -112,7 +111,7 @@ class SectionCarousel extends React.Component {
                     <div className="slick-caption">
                       <h4 className={classes.captionBg}>
                         <Brush className="slick-icons" />
-                          Graphical Design
+                        Graphical Design
                       </h4>
                     </div>
                   </div>

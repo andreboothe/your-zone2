@@ -18,14 +18,14 @@ import GridItem from "components/Grid/GridItem.jsx";
 
 import productStyle from "assets/jss/material-kit-react/views/landingPageSections/productStyle.jsx";
 
-class AboutInfo extends React.Component {
+class CoreValues extends React.Component {
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>What we're about</h2>
+            <h2 className={classes.title}>Who we are</h2>
             {/* <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful
@@ -38,25 +38,19 @@ class AboutInfo extends React.Component {
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <h3 className={classes.title}>Our Vision</h3>
+              <h3 className={classes.title}>Belief</h3>
               <h5 className={classes.description}>
-                To give our clients the most supreme service at a competitive
-                price.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, deserunt?
               </h5>
             </GridItem>
             <GridItem xs={12} sm={12} md={12}>
-              <h3 className={classes.title}>Our Mission</h3>
+              <h3 className={classes.title}>Belief</h3>
               <h5 className={classes.description}>
-                To be an extension to our clients, helping them meet all their
-                expectations while delivering professionalism and creativity.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
+                eveniet!.
               </h5>
             </GridItem>
-            {/* <GridItem xs={12} sm={12} md={12}>
-              
-              <h3 className={classes.title}>Who we are</h3>
-              <h5 className={classes.description}>At YourZone Media & Communication, we are a team of creatives who envisions meaningful interactions between your brand and your customers. We strive to create lasting impressions and deliver on our promise to always offer competitive pricing and creativity.</h5>
-            
-            </GridItem> */}
           </GridContainer>
         </div>
       </div>
@@ -64,4 +58,4 @@ class AboutInfo extends React.Component {
   }
 }
 
-export default withStyles(productStyle)(AboutInfo);
+export default withStyles(productStyle)(CoreValues);

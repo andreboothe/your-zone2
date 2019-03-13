@@ -18,23 +18,23 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.jsx";
 
 // Sections for this page
-import TeamSection from "./Sections/TeamSection.jsx";
+// import TeamSection from "./Sections/TeamSection.jsx";
+import CoreValues from "./Sections/CoreValues.jsx";
 import AboutInfo from "./Sections/AboutInfo.jsx";
 
 class AboutPage extends React.Component {
   render() {
     const { classes } = this.props;
-    
+
     return (
       <div>
-        
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
             {/* <TeamSection /> */}
+            <CoreValues />
             <AboutInfo />
           </div>
         </div>
-        
       </div>
     );
   }

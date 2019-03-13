@@ -9,17 +9,17 @@ const carouselStyle = {
     marginLeft: "auto !important",
     marginRight: "auto !important"
   },
-  image:{
-    maxHeight:"365px !important"
+  image: {
+    maxHeight: "450px !important"
   },
-  captionBg:{
+  captionBg: {
     backgroundColor: "rgba(234, 63, 61, 0.45)",
     borderRadius: "5px",
-    width:"fit-content",
-    marginLeft:"auto",
-    marginRight:"auto",
+    width: "fit-content",
+    marginLeft: "auto",
+    marginRight: "auto",
     paddingLeft: "5px",
-    paddingRight:"5px"
+    paddingRight: "5px"
   }
 };
 

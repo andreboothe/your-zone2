@@ -9,7 +9,7 @@ import Camera from "@material-ui/icons/Camera";
 import Web from "@material-ui/icons/Web";
 import Group from "@material-ui/icons/Group";
 import Brush from "@material-ui/icons/Brush";
-import FileCopy from "@material-ui/icons/FileCopy";
+import ShopTwo from "@material-ui/icons/ShopTwo";
 // import Fingerprint from "@material-ui/icons/Fingerprint";
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -40,8 +40,8 @@ class ProductSection extends React.Component {
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <SectionCarousel/>
-            </GridItem >
+              <SectionCarousel />
+            </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Consultancy"
@@ -89,9 +89,9 @@ class ProductSection extends React.Component {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
-                title="Resumes & Cover Letter Customization"
+                title="Digital Marketing"
                 description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-                icon={FileCopy}
+                icon={ShopTwo}
                 iconColor="warning"
                 vertical
               />
