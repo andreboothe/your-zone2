@@ -30,7 +30,7 @@ class AboutPage extends React.Component {
         
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <TeamSection />
+            {/* <TeamSection /> */}
             <AboutInfo />
           </div>
         </div>
