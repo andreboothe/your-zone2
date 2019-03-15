@@ -28,12 +28,12 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/bg7.jpg";
 const options = [
-  { value: "8", label: "8:00am" },
-  { value: "10", label: "10:00am" },
-  { value: "12", label: "12:00am" },
-  { value: "14", label: "2:00pm" },
-  { value: "16", label: "4:00pm" },
-  { value: "18", label: "6:00pm" }
+  { value: 8, label: "8:00am" },
+  { value: 10, label: "10:00am" },
+  { value: 12, label: "12:00am" },
+  { value: 14, label: "2:00pm" },
+  { value: 16, label: "4:00pm" },
+  { value: 18, label: "6:00pm" }
 ];
 
 class ConsultancyPage extends React.Component {
@@ -116,11 +116,11 @@ class ConsultancyPage extends React.Component {
   dateToMaxAndMinTime = date => {
     const dateArr = date.split("-");
 
-    const parsedDate = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
-    let maxTime = parsedDate;
-    let minTime = parsedDate;
+    let maxTime = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
+    let minTime = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
     maxTime.setHours(23, 59, 0, 0);
     minTime.setHours(0, 0, 0, 0);
+    // console.log(maxTime, minTime);
     return {
       max: maxTime,
       min: minTime
@@ -130,12 +130,12 @@ class ConsultancyPage extends React.Component {
   dateToMaxAndMinTimeSlot = (date, hour) => {
     const dateArr = date.split("-");
 
-    const parsedDate = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
-    let maxTime = parsedDate;
-    let minTime = parsedDate;
+    let maxTime = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
+    let minTime = new Date(dateArr[0], dateArr[1] - 1, dateArr[2]);
     maxTime.setHours(hour + 1, 0, 0, 0);
     minTime.setHours(hour, 0, 0, 0);
     // console.log(hour);
+    // console.log(maxTime, minTime);
     return {
       max: maxTime,
       min: minTime
