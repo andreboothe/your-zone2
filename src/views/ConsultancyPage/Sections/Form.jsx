@@ -23,12 +23,12 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
 import image from "assets/img/bg7.jpg";
 const options = [
-  { value: "8:00am", label: "8:00am" },
-  { value: "10:00am", label: "10:00am" },
-  { value: "12:00am", label: "12:00am" },
-  { value: "2:00pm", label: "2:00pm" },
-  { value: "4:00pm", label: "4:00pm" },
-  { value: "6:00pm", label: "6:00pm" }
+  { value: "8", label: "8:00am" },
+  { value: "10", label: "10:00am" },
+  { value: "12", label: "12:00am" },
+  { value: "14", label: "2:00pm" },
+  { value: "16", label: "4:00pm" },
+  { value: "18", label: "6:00pm" }
 ];
 
 class ConsultancyPage extends React.Component {
