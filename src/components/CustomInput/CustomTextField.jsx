@@ -7,11 +7,11 @@ import classNames from "classnames";
 import withStyles from "@material-ui/core/styles/withStyles";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
-import Input from "@material-ui/core/Input";
+import TextField from "@material-ui/core/TextField";
 
 import customInputStyle from "assets/jss/material-kit-react/components/customInputStyle.jsx";
 
-function CustomInput({ ...props }) {
+function CustomTextField({ ...props }) {
   const {
     classes,
     formControlProps,
@@ -19,6 +19,7 @@ function CustomInput({ ...props }) {
     id,
     labelProps,
     inputProps,
+    InputProps,
     error,
     white,
     inputRootCustomClasses,
@@ -62,8 +63,8 @@ function CustomInput({ ...props }) {
           {labelText}
         </InputLabel>
       ) : null}
-      {}
-      <Input
+
+      <TextField
         classes={{
           input: inputClasses,
           root: marginTop,
@@ -72,17 +73,19 @@ function CustomInput({ ...props }) {
         }}
         id={id}
         {...inputProps}
+        InputProps={{ ...InputProps }}
       />
     </FormControl>
   );
 }
 
-CustomInput.propTypes = {
+CustomTextField.propTypes = {
   classes: PropTypes.object.isRequired,
   labelText: PropTypes.node,
   labelProps: PropTypes.object,
   id: PropTypes.string,
   inputProps: PropTypes.object,
+  InputProps: PropTypes.object,
   formControlProps: PropTypes.object,
   inputRootCustomClasses: PropTypes.string,
   error: PropTypes.bool,
@@ -90,4 +93,4 @@ CustomInput.propTypes = {
   white: PropTypes.bool
 };
 
-export default withStyles(customInputStyle)(CustomInput);
+export default withStyles(customInputStyle)(CustomTextField);

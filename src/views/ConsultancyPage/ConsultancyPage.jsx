@@ -20,21 +20,20 @@ import landingPageStyle from "assets/jss/material-kit-react/views/landingPage.js
 // Sections for this page
 import Form from "./Sections/Form.jsx";
 
-
 class ConsultancyPage extends React.Component {
+  componentDidMount() {}
+
   render() {
     const { classes } = this.props;
     // console.log(dashboardRoutes)
     return (
       <div>
-        
         <div className={classNames(classes.main, classes.mainRaised)}>
           <div className={classes.container}>
-            <Form/>
+            <Form />
             {/* <WorkSection /> */}
           </div>
         </div>
-        
       </div>
     );
   }
