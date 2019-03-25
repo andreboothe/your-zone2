@@ -11,6 +11,12 @@ import Tooltip from "@material-ui/core/Tooltip";
 
 // @material-ui/icons
 import { Apps, Phone, Mail, Contacts } from "@material-ui/icons";
+import ImageSearch from "@material-ui/icons/ImageSearch";
+import Camera from "@material-ui/icons/Camera";
+import Web from "@material-ui/icons/Web";
+import Group from "@material-ui/icons/Group";
+import Brush from "@material-ui/icons/Brush";
+import ShopTwo from "@material-ui/icons/ShopTwo";
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.jsx";
@@ -80,28 +86,37 @@ function HeaderLinks({ ...props }) {
         >
           Contact us
         </Button> */}
-        {/* <CustomDropdown
+        <CustomDropdown
           noLiPadding
-          buttonText="Contact Us"
+          buttonText="Services"
           buttonProps={{
             className: classes.navLink,
             color: "transparent"
           }}
           buttonIcon={Contacts}
           dropdownList={[
-            <a href="mailto:yourzone.jamaica@gmail.com" target="_blank" className={classes.dropdownLink}>
-              <Mail />: yourzone.jamaica@gmail.com
-            </a>,
-            <a href="tel:876-896-1104" target="_blank" className={classes.dropdownLink}>
-              <Phone/>: 876-896-1104
-            </a>,
-            <a href="tel:876-476-1509" target="_blank" className={classes.dropdownLink}>
-              <Phone/>: 876-476-1509
-            </a>,
+            <Link to="/photography"  className={classes.dropdownLink}>
+              <Camera />: Photography
+            </Link>,
+            <Link to="/social" className={classes.dropdownLink}>
+              <Web/>: Social Media Management
+            </Link>,
+            <Link to="/design"  className={classes.dropdownLink}>
+              <Brush/>: Graphical Design
+            </Link>,
+            <Link to="/marketing"  className={classes.dropdownLink}>
+              <ShopTwo/>: Digital Marketing
+            </Link>,
+            <Link to="/curation"  className={classes.dropdownLink}>
+              Content Curation
+            </Link>,
             
             
           ]}
-        /> */}
+        />
+        
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Link to="/contact" className={classes.navLink}>
           Contact
         </Link>
