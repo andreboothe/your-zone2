@@ -76,7 +76,7 @@ class App extends React.Component {
           <Header
             color="transparent"
             routes={dashboardRoutes}
-            brand="Your Zone"
+            brand="YZMC"
             rightLinks={<HeaderLinks />}
             fixed
             changeColorOnScroll={{

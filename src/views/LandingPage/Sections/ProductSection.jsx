@@ -45,7 +45,8 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Consultancy"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="YourZone
+                Media & Commnication helps businesses increase and retain customers. We can work with you and provide an action plan incorporating the various strategies for your success. Have a new business and don’t know how to start? We can help you too."
                 icon={Group}
                 iconColor="info"
                 vertical
@@ -54,7 +55,10 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Social Media Management"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="We
+                focus on creating valuable, creative and engaging content for your social media platforms with unique tactics to grow your audience.
+               
+               "
                 icon={Web}
                 iconColor="success"
                 vertical
@@ -63,7 +67,8 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Photography and Videography"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Have
+                an exciting idea you want to bring to life? Our creative team will execute your production and bring your concept to reality. We will provide professional videos and photographs for your company that will attract your target audience."
                 icon={Camera}
                 iconColor="danger"
                 vertical
@@ -72,7 +77,8 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Graphical Design"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Our
+                experienced team will design your logos, flyers or any designs needed for your amazingly engaging visuals to grab your audience."
                 icon={Brush}
                 iconColor="primary"
                 vertical
@@ -81,7 +87,8 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Content Curation"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description="Whether
+                it be video production, writing, design or photography we  got you covered on content. We provide valuable, consistent and relevant information to attract and retain your audience which subsequently drives your sales."
                 icon={ImageSearch}
                 iconColor="rose"
                 vertical
@@ -90,7 +97,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Digital Marketing"
-                description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+                description=""
                 icon={ShopTwo}
                 iconColor="warning"
                 vertical

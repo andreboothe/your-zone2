@@ -18,17 +18,19 @@ import Web from "@material-ui/icons/Web";
 import Group from "@material-ui/icons/Group";
 import Brush from "@material-ui/icons/Brush";
 import Devices from "@material-ui/icons/Devices";
-import FileCopy from "@material-ui/icons/FileCopy";
+import ShopTwo from "@material-ui/icons/ShopTwo";
 
-import image1 from "assets/img/bg.jpg";
-import image2 from "assets/img/bg2.jpg";
-import image3 from "assets/img/bg3.jpg";
 import consulting from "assets/img/services/consulting.jpg";
 import design from "assets/img/services/design.jpg";
 import programming from "assets/img/services/programming.jpg";
-import weddingPhoto from "assets/img/services/weddingPhoto.jpeg";
 import photoGraphy from "assets/img/services/photoGraphy.jpg";
 import socialMedia from "assets/img/services/socialMedia.jpg";
+
+import consultation from "assets/img/services/consultation.JPG";
+import content from "assets/img/services/Content.JPG";
+import digital from "assets/img/services/DIGITAL.JPG";
+import photo from "assets/img/services/Photo.JPG";
+import social from "assets/img/services/Social.JPG";
 
 class SectionCarousel extends React.Component {
   render() {
@@ -51,29 +53,29 @@ class SectionCarousel extends React.Component {
                 <Carousel {...settings}>
                   <div>
                     <img
-                      src={photoGraphy}
+                      src={photo}
                       alt="First slide"
                       // className=""
                       className={carouselImg}
                     />
                     <div className="slick-caption">
-                      <h4 className={classes.captionBg}>
+                      {/* <h4 className={classes.captionBg}>
                         <Camera className="slick-icons" />
                         Photography & Videography
-                      </h4>
+                      </h4> */}
                     </div>
                   </div>
                   <div>
                     <img
-                      src={consulting}
+                      src={consultation}
                       alt="Second slide"
                       className={carouselImg}
                     />
                     <div className="slick-caption">
-                      <h4 className={classes.captionBg}>
+                      {/* <h4 className={classes.captionBg}>
                         <Group className="slick-icons" />
                         Consulting
-                      </h4>
+                      </h4> */}
                     </div>
                   </div>
                   <div>
@@ -83,23 +85,23 @@ class SectionCarousel extends React.Component {
                       className={carouselImg}
                     />
                     <div className="slick-caption">
-                      <h4 className={classes.captionBg}>
+                      {/* <h4 className={classes.captionBg}>
                         <Devices className="slick-icons" />
                         Web Development
-                      </h4>
+                      </h4> */}
                     </div>
                   </div>
                   <div>
                     <img
-                      src={socialMedia}
+                      src={social}
                       alt="Third slide"
                       className={carouselImg}
                     />
                     <div className="slick-caption">
-                      <h4 className={classes.captionBg}>
+                      {/* <h4 className={classes.captionBg}>
                         <Web className="slick-icons" />
                         Social Media Management
-                      </h4>
+                      </h4> */}
                     </div>
                   </div>
                   <div>
@@ -109,10 +111,36 @@ class SectionCarousel extends React.Component {
                       className={carouselImg}
                     />
                     <div className="slick-caption">
-                      <h4 className={classes.captionBg}>
+                      {/* <h4 className={classes.captionBg}>
                         <Brush className="slick-icons" />
                         Graphical Design
-                      </h4>
+                      </h4> */}
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src={digital}
+                      alt="Sixth slide"
+                      className={carouselImg}
+                    />
+                    <div className="slick-caption">
+                      {/* <h4 className={classes.captionBg}>
+                        <ShopTwo className="slick-icons" />
+                        Digital Marketing
+                      </h4> */}
+                    </div>
+                  </div>
+                  <div>
+                    <img
+                      src={content}
+                      alt="Seventh slide"
+                      className={carouselImg}
+                    />
+                    <div className="slick-caption">
+                      {/* <h4 className={classes.captionBg}>
+                        <ShopTwo className="slick-icons" />
+                        Content
+                      </h4> */}
                     </div>
                   </div>
                 </Carousel>
