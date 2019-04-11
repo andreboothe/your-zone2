@@ -33,7 +33,7 @@ function HeaderLinks({ ...props }) {
           Home
         </Link>
       </ListItem>
-      
+
       <ListItem className={classes.listItem}>
         <Link to="/about" className={classes.navLink}>
           About Us
@@ -67,25 +67,23 @@ function HeaderLinks({ ...props }) {
             <Link to="/" className={classes.dropdownLink}>
               Resumes & Cover Letter Customization
             </Link> }}*/}
-            <Link
-              to="/consultancy"
-              // target="_blank"
-              className={classes.navLink}
-            >
-              Book Consultation
-            </Link>
-          
-        
+        <Link
+          to="/consultancy"
+          // target="_blank"
+          className={classes.navLink}
+        >
+          Book Consultation
+        </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        {/* <Button
+      {/* <ListItem className={classes.listItem}>
+        <Button
           href="/contact"
           color="transparent"
           
           className={classes.navLink}
         >
           Contact us
-        </Button> */}
+        </Button>
         <CustomDropdown
           noLiPadding
           buttonText="Services"
@@ -115,7 +113,7 @@ function HeaderLinks({ ...props }) {
           ]}
         />
         
-      </ListItem>
+      </ListItem> */}
       <ListItem className={classes.listItem}>
         <Link to="/contact" className={classes.navLink}>
           Contact
