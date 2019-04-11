@@ -97,7 +97,7 @@ class ProductSection extends React.Component {
             <GridItem xs={12} sm={12} md={4}>
               <InfoArea
                 title="Digital Marketing"
-                description=""
+                description="Brands that take advantage of online marketing have reported as much as 80% increase in direct and indirect sales. We at YourZone Media & Communication will market your products and/or services on various digital marketing platforms to reach your customers wherever they are."
                 icon={ShopTwo}
                 iconColor="warning"
                 vertical

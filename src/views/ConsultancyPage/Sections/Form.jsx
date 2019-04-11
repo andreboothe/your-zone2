@@ -26,7 +26,6 @@ import Snackbar from "components/Snackbar/Snackbar.jsx";
 
 import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
-import image from "assets/img/bg7.jpg";
 const options = [
   { value: 8, label: "8:00am" },
   { value: 10, label: "10:00am" },
