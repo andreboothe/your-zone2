@@ -26,7 +26,7 @@ import Snackbar from "components/Snackbar/Snackbar.jsx";
 
 import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 
-const options = [
+let options = [
   { value: 8, label: "8:00am" },
   { value: 10, label: "10:00am" },
   { value: 12, label: "12:00am" },
@@ -107,11 +107,23 @@ class ConsultancyPage extends React.Component {
       .then(result => {
         if (result.length === 0) {
           this.setState({ timeSlot: [...options] });
+        } else {
+          const filteredOptions = this.filterEventOptions();
+          this.setState({ timeSlot: [...filteredOptions] });
         }
       })
       .then(() => this.setState({ loadingEvents: false }));
   };
 
+  filterEventOptions = events => {
+    const bookedTimes = events.map(event =>
+      new Date(event.start.dateTime).getHours()
+    );
+    const filteredOptions = options.filter(
+      option => !bookedTimes.includes(option.value)
+    );
+    return filteredOptions;
+  };
   dateToMaxAndMinTime = date => {
     const dateArr = date.split("-");
 
