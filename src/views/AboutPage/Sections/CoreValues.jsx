@@ -25,7 +25,7 @@ class CoreValues extends React.Component {
       <div className={classes.section}>
         <GridContainer justify="center">
           <GridItem xs={12} sm={12} md={8}>
-            <h2 className={classes.title}>Who we are</h2>
+            <h2 className={classes.title}>Who we are?</h2>
             {/* <h5 className={classes.description}>
               This is the paragraph where you can write more details about your
               product. Keep you user engaged by providing meaningful
@@ -38,17 +38,15 @@ class CoreValues extends React.Component {
         <div>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
-              <h3 className={classes.title}>Belief</h3>
+              {/* <h3 className={classes.title}>Belief</h3> */}
               <h5 className={classes.description}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Eveniet, deserunt?
-              </h5>
-            </GridItem>
-            <GridItem xs={12} sm={12} md={12}>
-              <h3 className={classes.title}>Belief</h3>
-              <h5 className={classes.description}>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde,
-                eveniet!.
+                We are a full service digital-marketing agency compromising of a
+                team of digital marketers and designers that strongly believes
+                that being a favorite company is far more important than being a
+                famous one. <br />
+                We craft and execute winning digital marketing strategies that
+                compels your target audience to take favorable actions and
+                develop effective content strategies for your brand.
               </h5>
             </GridItem>
           </GridContainer>
