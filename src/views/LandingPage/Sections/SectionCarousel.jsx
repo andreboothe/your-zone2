@@ -5,32 +5,20 @@ import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
 // @material-ui/icons
-import { LocationOn } from "@material-ui/icons";
+
 // core components
 import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import carouselStyle from "assets/jss/material-kit-react/views/componentsSections/carouselStyle.jsx";
 
-import ImageSearch from "@material-ui/icons/ImageSearch";
-import Camera from "@material-ui/icons/Camera";
-import Web from "@material-ui/icons/Web";
-import Group from "@material-ui/icons/Group";
-import Brush from "@material-ui/icons/Brush";
-import Devices from "@material-ui/icons/Devices";
-import ShopTwo from "@material-ui/icons/ShopTwo";
-
-import consulting from "assets/img/services/consulting.jpg";
-import design from "assets/img/services/design.jpg";
-import programming from "assets/img/services/programming.jpg";
-import photoGraphy from "assets/img/services/photoGraphy.jpg";
-import socialMedia from "assets/img/services/socialMedia.jpg";
-
-import consultation from "assets/img/services/consultation.JPG";
-import content from "assets/img/services/Content.JPG";
-import digital from "assets/img/services/DIGITAL.JPG";
-import photo from "assets/img/services/Photo.JPG";
-import social from "assets/img/services/Social.JPG";
+import design from "assets/img/services/design-min.jpg";
+import programming from "assets/img/services/programming-min.jpg";
+import consultation from "assets/img/services/consultation-min.JPG";
+import content from "assets/img/services/Content-min.JPG";
+import digital from "assets/img/services/DIGITAL-min.JPG";
+import photo from "assets/img/services/Photo-min.JPG";
+import social from "assets/img/services/Social-min.JPG";
 
 class SectionCarousel extends React.Component {
   render() {

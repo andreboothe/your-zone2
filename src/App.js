@@ -42,7 +42,7 @@ class App extends React.Component {
 
   renderParallax = classes => {
     return (
-      <Parallax filter image={require("assets/img/logo-dark.jpg")}>
+      <Parallax filter image={require("assets/img/logo-dark-min.jpg")}>
         <div className={classes.container}>
           <GridContainer>
             {!this.isGivenPage("/about") ? (
