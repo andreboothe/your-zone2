@@ -2,15 +2,30 @@ import { container, dangerColor } from "assets/jss/material-kit-react.jsx";
 
 const carouselStyle = {
   section: {
-    padding: "70px 0"
+    padding: "70px 0",
+    ["@media (max-width:500px)"]: {
+      padding: "10px 0"
+    }
   },
-  container,
+  container: {
+    ["@media (max-width:500px)"]: {
+      marginLeft: "0px",
+      marginRight: "0px"
+    }
+  },
   marginAuto: {
     marginLeft: "auto !important",
-    marginRight: "auto !important"
+    marginRight: "auto !important",
+    ["@media (max-width:500px)"]: {
+      marginLeft: "0px",
+      marginRight: "0px"
+    }
   },
   image: {
-    maxHeight: "450px !important"
+    maxHeight: "450px !important",
+    ["@media (max-width:500px)"]: {
+      maxHeight: "120px !important"
+    }
   },
   captionBg: {
     backgroundColor: "rgba(234, 63, 61, 0.45)",
