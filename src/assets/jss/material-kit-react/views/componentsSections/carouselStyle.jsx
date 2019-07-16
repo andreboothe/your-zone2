@@ -10,8 +10,9 @@ const carouselStyle = {
   container: {
     ...container,
     ["@media (max-width:500px)"]: {
-      marginLeft: "0px",
-      marginRight: "0px"
+      marginLeft: "0px !important",
+      marginRight: "0px !important",
+      padding: "0px !important"
     }
   },
   marginAuto: {
