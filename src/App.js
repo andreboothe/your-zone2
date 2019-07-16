@@ -50,7 +50,7 @@ class App extends React.Component {
                 <h1 className={classes.title}>
                   Supreme service at a competitive price.
                 </h1>
-                <h4>
+                <h4 className={classes.subParallaxText}>
                   At YourZone Media & Communication, we are a team of creatives
                   who envisions meaningful interactions between your brand and
                   your customers. We strive to create lasting impressions and

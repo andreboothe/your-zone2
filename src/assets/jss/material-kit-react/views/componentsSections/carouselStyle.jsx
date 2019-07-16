@@ -8,6 +8,7 @@ const carouselStyle = {
     }
   },
   container: {
+    ...container,
     ["@media (max-width:500px)"]: {
       marginLeft: "0px",
       marginRight: "0px"

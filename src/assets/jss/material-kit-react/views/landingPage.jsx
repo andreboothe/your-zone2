@@ -20,6 +20,15 @@ const landingPageStyle = {
     maxWidth: "500px",
     margin: "10px auto 0"
   },
+  subParallaxText: {
+    fontSize: "1.313rem",
+    maxWidth: "500px",
+    margin: "10px auto 0",
+    "@media (max-width: 576px)": {
+      display: "none",
+      margin: "10px auto 0"
+    }
+  },
   main: {
     background: "#FFFFFF",
     position: "relative",
